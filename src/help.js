@@ -1,5 +1,5 @@
 const help = (prefix) => { 
-	return `   *🍁MENU DA MILENA🍁*
+	return `   *😍MENU DA MILENA DELICIA*
 	
 	
 *╭═┅ৡৢ͜͡✦═══╡꧁꧂╞═══┅ৡৢ͜͡✦═╮*
