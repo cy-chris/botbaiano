@@ -149,9 +149,9 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5517991134416@s.whatsapp.net"] // GANTI NOMOR LU
-			const adminbotnumber = ["628165466368@s.whatsapp.net"] // GANTI NOMOR LU
-			const frendsowner = ["628165466368@s.whatsapp.net"] // GAUSAH DIGANTI!!!
+			const ownerNumber = ["5581996207906@s.whatsapp.net"] // GANTI NOMOR LU
+			const adminbotnumber = ["5581996207906@s.whatsapp.net"] // GANTI NOMOR LU
+			const frendsowner = ["5581996207906@s.whatsapp.net"] // GAUSAH DIGANTI!!!
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -329,7 +329,7 @@ async function starts() {
 					break
 			case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
+                 client.sendMessage(from, 'olha ai o numero do meu dono ><',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
@@ -466,7 +466,7 @@ async function starts() {
                 case 'tahta':
 					if (args.length < 1) return reply(mess.blank)
 					teks = body.slice(7)
-					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (teks.length > 9) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
@@ -475,7 +475,7 @@ async function starts() {
 					var gh = body.slice(5)
 					var gbl3 = gh.split("|")[0];
 					var gbl4 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teksnya mana um')
+					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/watercolour?text1=${gbl3}&text2=${gbl4}&apikey=xptnbot352`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -485,7 +485,7 @@ async function starts() {
 					var gh = body.slice(10)
 					var gbl7 = gh.split("|")[0];
 					var gbl8 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teksnya mana um')
+					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/snowwrite?text1=${gbl7}&text2=${gbl8}&apikey=xptnbot352`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -495,30 +495,30 @@ async function starts() {
 					var gh = body.slice(9)
 					var gbl5 = gh.split("|")[0];
 					var gbl6 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teksnya mana um')
+					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/marvellogo?text1=${gbl5}&text2=${gbl6}&apikey=xptnbot352`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'lovemake':
-					if (args.length < 1) return reply('Teksnya mana um')
+					if (args.length < 1) return reply('Cadê o texto, hum')
 					love = body.slice(10)
-					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (love.length > 12) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+love})
 					break
 				case 'thunder':
-					if (args.length < 1) return reply('Teksnya mana um')
+					if (args.length < 1) return reply('Cadê o texto, hum')
 					thun = body.slice(9)
-					if (thun.length > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (thun.length > 10) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
 					break
                 case 'stiltext':
-                      if (args.length < 1) return reply('Teks nya mana?')
+                      if (args.length < 1) return reply('Onde está o texto?')
                       gh = body.slice(11)
                       gl1 = gh.split("|")[0];
                       gl2 = gh.split("|")[1];
@@ -530,7 +530,7 @@ async function starts() {
 					var gh = body.slice(9)
 					coli1 = gh.split("|")[0];
 					coli2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teks nya mana?')
+					if (args.length < 1) return reply('Onde está o texto?')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://zeksapi.herokuapp.com/api/watercolour?text1=${coli1}&text2=${coli2}&apikey=xptnbot352`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
@@ -539,13 +539,13 @@ async function starts() {
 					var gh = body.slice(9)
 					coli1 = gh.split("|")[0];
 					coli2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teks nya mana?')
+					if (args.length < 1) return reply('Onde está o texto?')
 					reply(mess.wait)
 					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, party, image, {quoted: mek})
 					break
                 case 'ninjalogo':
-                      if (args.length < 1) return reply('Teks nya mana?')
+                      if (args.length < 1) return reply('Onde está o texto?')
                       gh = body.slice(11)
                       gl1 = gh.split("|")[0];
                       gl2 = gh.split("|")[1];
@@ -567,7 +567,7 @@ async function starts() {
 				case 'party':
 					if (args.length < 1) return reply(mess.blank)
 					part = body.slice(7)
-					if (part.length > 20) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					if (part.length > 20) return reply('O texto é muito longo, até 20 caracteres')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {caption: 'Nih kak', quoted: mek})
@@ -575,7 +575,7 @@ async function starts() {
 				case 'rtext':
 					if (args.length < 1) return reply(mess.blank)
 					tels5 = body.slice(7)
-					if (tels5.length > 10) return reply('Teksnya kepanjangan, maksimal 10 karakter')
+					if (tels5.length > 10) return reply('O texto é muito longo, até 10 caracteres')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: tels5})
@@ -583,7 +583,7 @@ async function starts() {
 				case 'water':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(7)
-					if (tels.length > 15) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					if (tels.length > 15) return reply('O texto é muito longo, até 20 caracteres')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/tfire?text=${tels}&apikey=xptnbot352`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -592,7 +592,7 @@ async function starts() {
 				case 'firetext':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(7)
-					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (tels.ength > 10) return reply('O texto é muito longo, até 9 caracteres')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/tlight?text=${tels}&apikey=xptnbot352`, {method: 'get'})
 					buff = await getBuffer(anu.result)
@@ -601,7 +601,7 @@ async function starts() {
 				case 'textdark':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
-					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (tels.ength > 10) return reply('O texto é muito longo, até 9 caracteres')
 					reply(mess.wait)
 					anu = await fetchJson(`http://melodicxt.herokuapp.com/api/txtcustom?theme=metal_dark_gold&text=${tels}&apiKey=administrator`, {method: 'get'})
 					buff = await getBuffer(anu.result)
